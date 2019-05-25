@@ -1,5 +1,6 @@
+package org.jointheleague.graphical.robot;
 
-public class Houses {
+public class Robot {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
