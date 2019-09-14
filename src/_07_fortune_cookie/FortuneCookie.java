@@ -29,8 +29,7 @@ public class FortuneCookie {
 			System.out.println("You will be happy");
 		} else {
 			System.out.println("You will be alone for the rest of your life");
-		}
-
-	}*/
+		}*/
+	}
 
 }
