@@ -28,12 +28,13 @@ public class Soundeffectsmachine implements ActionListener {
 		panel.add(button1);
 		panel.add(button2);
 		panel.add(button3);
-		frame.pack();
 		button1.addActionListener(this);
 		button1.setText("Airplane Sound");
 		button2.addActionListener(this);
+		button2.setText("Ocean Wave");
 		button3.addActionListener(this);
-
+		button3.setText("Ship Bell");
+		frame.pack();
 	}
 
 	@Override
@@ -41,7 +42,14 @@ public class Soundeffectsmachine implements ActionListener {
 		if (button1.equals(e.getSource())) {
 			playSound("airplane.wav");
 		}
+		else if(button2.equals(e.getSource())) {
+			playSound("oceanwave.wav");
+		}
+		else if(button3.equals(e.getSource())) {
+			playSound("shipbell.wav");
+		}
 	}
+		
 
 	private void playSound(String fileName) {
 		AudioClip sound = JApplet.newAudioClip(getClass().getResource(fileName));
