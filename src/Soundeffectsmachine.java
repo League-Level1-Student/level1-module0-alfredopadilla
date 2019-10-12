@@ -1,3 +1,4 @@
+
 import java.applet.AudioClip;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -31,9 +32,9 @@ public class Soundeffectsmachine implements ActionListener {
 		button1.addActionListener(this);
 		button1.setText("Airplane Sound");
 		button2.addActionListener(this);
-		button2.setText("Ocean Wave");
+		button2.setText("Heavy Rain");
 		button3.addActionListener(this);
-		button3.setText("Ship Bell");
+		button3.setText("Service Bell");
 		frame.pack();
 	}
 
@@ -43,10 +44,10 @@ public class Soundeffectsmachine implements ActionListener {
 			playSound("airplane.wav");
 		}
 		else if(button2.equals(e.getSource())) {
-			playSound("oceanwave.wav");
+			playSound("heavyrain.wav");
 		}
 		else if(button3.equals(e.getSource())) {
-			playSound("shipbell.wav");
+			playSound("servicebell.wav");
 		}
 	}
 		
