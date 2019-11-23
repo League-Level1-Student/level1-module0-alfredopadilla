@@ -1,26 +1,44 @@
-<!DOCTYPE html>
-<html>
-<title>Recipes</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://league-level0.github.io/style.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+public class CutenessTV implements ActionListener {
+private JButton button1;
+private JButton button2;
+private JButton button3;
 
-<script src="https://league-level0.github.io/copyrightFooter.js"></script>
-<body>
+public static void main(String[] args) {
+new CutenessTV().showButton();
+}
 
-<script>
-window.onload=function(){document.location.href="http://level1.jointheleague.org/Mod0Recipes/CutenessTV.html"}
-</script>
+public void showButton() {
+System.out.println("Button clicked");
+JFrame frame = new JFrame();
+JPanel panel = new JPanel();
+frame.setVisible(true);
+frame.add(panel);
+button1 = new JButton();
+button2 = new JButton();
+button3 = new JButton();
+panel.add(button1);
+panel.add(button2);
+panel.add(button3);
+button1.addActionListener(this);
+button1.setText("Ducks");
+button2.addActionListener(this);
+button2.setText("Frog");
+button3.addActionListener(this);
+button3.setText("FluffyUnicorns");
+frame.pack();
+}
 
- 
+@Override
+public void actionPerformed(ActionEvent e) {
+if (button1.equals(e.getSource())) {
+playVideo("https://www.youtube.com/watch?v=MtN1YnoL46Q");
+}
+else if(button2.equals(e.getSource())) {
+playVideo("https://www.youtube.com/watch?v=cBkWhkAZ9ds");
+}
+else if(button3.equals(e.getSource())) {
+playVideo("https://www.youtube.com/watch?v=a-xWhG4UU_Y");
+}
+}
 
-<br><br><br><br><br><br><br><br><br>
-<div id="copyright">
-<script>
-copyright();
-</script>
-</div>
-	
-</body>
-</html>
+
