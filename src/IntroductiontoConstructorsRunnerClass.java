@@ -1,26 +1,18 @@
-class Platypus{
+import javax.swing.JOptionPane;
 
-public class IntroductiontoConstructors {
-}
+public class IntroductiontoConstructorsRunnerClass {
 
-private String PlatypusName;
-    public Platypus(String name){
-        PlatypusName= name;
-    }
-    public void setName (String name) {
-        PlatypusName = name;
-    }
-    public String getPlatypusName() {
-        return PlatypusName;
-    }
-    public void name(){
-        System.out.printf("The platypus \" + name + \" is smarter than your average platypus");
+	public static void main(String[] args) {
+		Platypus PlatypusObject = new Platypus("Joseph");
+		Platypus PlatypusObject2 = new Platypus("Cannon");
+		PlatypusObject.setName("jack");
+		PlatypusObject.getPlatypusName();
+		PlatypusObject.sayHi();
+		PlatypusObject2.sayHi();
+
+	}
 
 
+	
 
-
-
-
-
-    }
 }
